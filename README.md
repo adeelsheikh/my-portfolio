@@ -13,3 +13,5 @@ AWS S3
 AWS Route53
 AWS CloudFront
 AWS CodeBuild
+AWS CLI
+AWS Lambda
