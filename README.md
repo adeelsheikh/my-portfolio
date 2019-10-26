@@ -2,6 +2,6 @@
 
 This is my professional portfolio.
 
-# Technologies used
+## Technologies used
 
 Git
