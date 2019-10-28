@@ -10,22 +10,22 @@ def lambda_handler(event, context):
     sns = boto3.resource('sns')
     topic = sns.Topic(
         'arn:aws:sns:eu-central-1:809411616619:Deploy-Portfolio-Topic')
-
+    
     location = {
         'bucketName': 'portfoliobuild.adeelnayyer.uk',
         'objectKey': 'portfolio-build.zip'
     }
-
+    
     try:
-        job = event.get('Codepipeline.job')
-
+        job = event.get('CodePipeline.job')
+                
         if job:
             for artifact in job['data']['inputArtifacts']:
                 if (artifact['name'] == 'BuildArtifact'):
                     location = artifact['location']['s3Location']
-
+            
         print('Building portfolio from: ' + str(location))
-
+            
         s3 = boto3.resource('s3')
         portfolio_bucket = s3.Bucket('portfolio.adeelnayyer.uk')
         build_bucket = s3.Bucket(location['bucketName'])
@@ -53,7 +53,7 @@ def lambda_handler(event, context):
 
         topic.publish(Subject="Deployment Failed",
                       Message="Failed to deploy portfolio.")
-
+        
         raise
 
     return 'Done!'
