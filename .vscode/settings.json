@@ -2,4 +2,15 @@
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "explorer.openEditors.visible": 0,
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "window.title": "${dirty} ${activeEditorShort}${separator}${rootName}",
+  "workbench.editor.enablePreviewFromQuickOpen": false
 }
