@@ -50,12 +50,8 @@
     through parent containers
 */
 
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font-family: 'Cardo', serif;
+  font-family: Cambria, sans-serif;
   margin: 0;
 }
 
@@ -66,7 +62,6 @@ h4,
 h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: .1rem;
 }
 
 /*
@@ -87,11 +82,11 @@ h6 {
 */
 
 .section {
-  font-size: 4.2rem;
+  font-size: 2.625rem;
   min-height: 70vh;
   position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
 }
 
 .section--alignCentered {
@@ -99,15 +94,15 @@ h6 {
 }
 
 .section--description {
-  font-size: 2.8rem;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+  font-size: 1.75rem;
+  padding-left: 2.1875rem;
+  padding-right: 2.1875rem;
 }
 
 .section__description {
-  font-size: 0.75em;
+  font-size: 1rem;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   width: 50%;
 }
 
@@ -121,12 +116,12 @@ h6 {
 .section__exampleWrapper,
 .section__example {
   display: inline-block;
-  height: 35rem;
-  width: 35rem;
+  height: 21.875rem;
+  width: 21.875rem;
 }
 
 .section__exampleWrapper {
-  margin-right: 4rem;
+  margin-right: 2.5rem;
 }
 
 .section__example {
@@ -138,12 +133,12 @@ h6 {
 
 .section__example:active {
   transition: 0.05s all;
-  width: 34rem;
-  height: 34rem;
+  width: 21.25rem;
+  height: 21.25rem;
 }
 
 .section__exampleTitle {
-  font-size: 3.4rem;
+  font-size: 2.125rem;
   text-align: center;
   text-transform: uppercase;
   width: 90%;
@@ -162,18 +157,18 @@ h6 {
 
 .section__heading--largest {
   float: left;
-  font-size: 5rem;
-  margin-left: 2rem;
+  font-size: 3.125rem;
+  margin-left: 1.25rem;
 }
 
 .section--social {
   float: right;
-  line-height: 10rem;
-  margin-right: 2rem;
+  line-height: 6.25rem;
+  margin-right: 1.25rem;
 }
 
 .social {
-  margin-right: 0.75rem;
+  margin-right: 0.475rem;
 }
 
 .socialWrapper:last-child .social {
@@ -182,7 +177,7 @@ h6 {
 
 .socialWrapper {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 1.875rem;
 }
 
 
@@ -208,26 +203,26 @@ h6 {
 
 .modal__closeButton {
   position: absolute;
-  right: 2rem;
-  top: 5rem;
-  font-size: 4rem;
+  right: 1.25rem;
+  top: 3.125rem;
+  font-size: 2.5rem;
   z-index: 1;
-  curson: pointer;
+  cursor: pointer;
 }
 
 .modal__text {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 2.4rem;
-  padding: 2rem;
+  font-size: 1.5rem;
+  padding: 1.25rem;
   width: 66%;
 }
 
 .modal__link {
   background-color: white;
   border-radius: 4px;
-  padding: 0.4rem 1rem;
+  padding: 0.25rem 0.625rem;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -237,5 +232,5 @@ h6 {
 }
 
 .emphasis {
-  font-size: 1.2em;
+  font-size: 1.6rem;
 }
